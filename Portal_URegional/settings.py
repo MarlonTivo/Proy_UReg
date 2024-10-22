@@ -43,8 +43,7 @@ INSTALLED_APPS = [
     'Facultad',
     'Pensum',
     'Sedes',
-   
-]
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
