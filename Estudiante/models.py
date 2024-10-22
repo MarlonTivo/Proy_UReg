@@ -12,7 +12,7 @@ class Estudiante (models.Model):
     Fecha_Nacimiento= models.DateField()
     
     def _str_(self):
-        return f"{self.Carnet} - {self.Nombres} {self.Apellidos}"
+        return f"{self.Carnet} - {self.Nombres} - {self.Apellidos}- {self.CUI}- {self.Telefono}- {self.Correo}- {self.Genero}- {self.Estado_Civil}- {self.Fecha_Nacimiento}" 
     
     
         

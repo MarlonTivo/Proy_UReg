@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'Estudiante',
     'Facultad',
     'Pensum',
+    'Sedes',
    
 ]
 
