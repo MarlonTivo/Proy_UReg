@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'Facultad',
     'Pensum',
     'Sedes',
+    'Carrera',
     ]
 
 MIDDLEWARE = [
