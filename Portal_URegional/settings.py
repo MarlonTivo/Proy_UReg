@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'Sedes',
     'Carrera',
     'Asignacion',
+    'Detalle_Asignacion',
     ]
 
 MIDDLEWARE = [
