@@ -11,7 +11,7 @@ class Catedraticos (models.Model):
     Genero = models.CharField(max_length=10, choices= [('M','Masculino'),('F','Femenino')],default='M')
     Fecha_Nacimiento = models.DateField()
     Profesion = models.CharField(max_length=50)
-    No_Colegiado = models.CharField(max_length=10, unique=True)
+    No_Coleg = models.CharField(max_length=10, unique=True)
     
     def __str__(self):
         return f"{self.Carnet} - {self.Nombres} - {self.Apellidos} - {self.CUI} - {self.Telefono} - {self.Email} - {self.Genero} - {self.Fecha_Nacimiento} - {self.Profesion} - {self.No_Colegiado}" 
