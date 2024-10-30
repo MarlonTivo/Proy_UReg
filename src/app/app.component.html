@@ -1,0 +1,59 @@
+<router-outlet></router-outlet>
+
+<form> 
+        <div class="col-5 col-md-3 d-flex justify-content-start">
+            <img class="img-fluid" src="assets/Logo 10 años@4x.png" alt="Logo Izquierdo" />
+        </div>
+    
+    <div class="text-center">
+    <h6><strong>SISTEMA DE CREACIÓN ESTUDIANTES</strong></h6>
+
+<h6><label>Carnet:</label>
+<input type="text" formControlName="Carnet" class="form-control" />
+<label>   CUI:</label>
+<input type="text" formControlName="CUI" class="form-control" /></h6>
+<h6><label>Nombre:</label>
+<input type="text" formControlName="Nombre" class="form-control" />
+<label>Apellido:</label>
+<input type="text" formControlName="Apellido" class="form-control" /></h6>
+<h6><label>Teléfono:</label>
+<input type="text" formControlName="Teléfono" class="form-control" />
+<label> Correo:</label>
+<input type="text" formControlName="Correo" class="form-control" /></h6>
+
+<h6><label>Género:
+    <select>
+        <option value="">Seleccione una Opción</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Femnino">Femenino</option>
+        <option value="Otro">Otro</option>
+    </select>
+</label>
+<label>Estado Civil:
+    <select>
+        <option value="">Seleccione una Opción</option>
+        <option value="Solter@">Soltero</option>
+        <option value="Vidud@">Viudo</option>
+        <option value="Casad@">Casado</option>
+        <option value="Divorciad@">Divorciado</option>
+    </select>
+</label></h6>
+<div class="col-md-4">
+<h6><label>Fecha de Nacimiento</label>
+<input type="date" formControlName="fecha_nacimiento" class="form-control" /></h6>
+</div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-1">
+        <button type="insertarEstudiante()">GUARDAR</button>
+        <button type="insertarEstudiante()">LIMPIAR</button>
+    
+    <hr>
+    <h2>VALORES</h2>
+
+    <pre>{{form().value | json}}</pre>   
+    <h3>Es valido?</h3> 
+    <pre>{{form().valid | json}}</pre>
+
+    
