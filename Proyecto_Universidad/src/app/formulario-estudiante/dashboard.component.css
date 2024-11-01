@@ -1,0 +1,253 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  padding-bottom: 140px;
+  background-color: #0056b3;
+  background-image: url('/background-dashboard.png'); /* Añadir la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Resto de tus estilos */
+.header-logos {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px;
+}
+
+.logo-left {
+  display: none;
+}
+
+.logo-right {
+  width: 220px;
+  height: auto;
+  object-fit: contain;
+  margin-right: 40px;
+}
+
+/* Mantén el resto del CSS como está */
+.menu-container {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-container .menu-icon {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.menu-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-options {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-container.open .menu-options {
+  display: flex;
+}
+
+.menu-option {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.menu-option:hover {
+  background-color: rgba(0, 128, 128, 0.6);
+}
+
+/* Resto de tus estilos */
+.navigation-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 10px 30px;
+}
+
+.btn-nav {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-nav:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  height: 30px;
+  padding: 5px;
+  font-size: 10px;
+  background-color: #ff8c00;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.social-icons img {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact-info li {
+  display: inline;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info .icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Mantén el resto del CSS como está */
+.container {
+  background-color: #0056b3;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 4%;
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+button:hover {
+  background-color: #e68900;
+}
+
+body.dashboard {
+  background-image: url('/background.png'); /* Imagen de fondo específica del dashboard */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #0056b3;
+}
+
+body:not(.dashboard) {
+  background-color: #0056b3; /* Fondo azul para otras secciones */
+}

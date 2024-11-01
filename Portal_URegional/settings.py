@@ -42,8 +42,11 @@ INSTALLED_APPS = [
     'Estudiante',
     'Facultad',
     'Pensum',
-   
-]
+    'Sedes',
+    'Carrera',
+    'Asignacion',
+    'Detalle_Asignacion',
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -82,9 +85,9 @@ WSGI_APPLICATION = 'Portal_URegional.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'uregional_bd',
+        'NAME': 'Prueba_Universidad',
         'USER': 'root',
-        'PASSWORD': 'Bdatos',
+        'PASSWORD': 'carrillo2002.',
         'HOST': 'localhost',
         'PORT': '3306',
     }

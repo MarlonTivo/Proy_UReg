@@ -1,4 +1,4 @@
-from django.db import models
+from django.db import models # type: ignore
 # Create your models here.
 class Estudiante (models.Model):
     Carnet= models.CharField (max_length=20, unique=True)
@@ -12,7 +12,7 @@ class Estudiante (models.Model):
     Fecha_Nacimiento= models.DateField()
     
     def _str_(self):
-        return f"{self.Carnet} - {self.Nombres} {self.Apellidos}"
+        return f"{self.Carnet} - {self.Nombres} - {self.Apellidos}- {self.CUI}- {self.Telefono}- {self.Correo}- {self.Genero}- {self.Estado_Civil}- {self.Fecha_Nacimiento}" 
     
     
         

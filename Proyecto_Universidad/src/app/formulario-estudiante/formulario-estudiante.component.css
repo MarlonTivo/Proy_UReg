@@ -1,0 +1,98 @@
+.custom-header {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.custom-header h6 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.custom-header h4 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.content {
+    margin: 30px auto;
+    max-width: 800px; /* Centrar el formulario y limitar el ancho */
+}
+
+/* Estilos para las filas del formulario */
+.form-row {
+    display: flex;
+    gap: 20px; /* Espacio entre columnas */
+    margin-bottom: 20px; /* Espacio entre filas */
+}
+
+.form-group {
+    flex: 1; /* Cada columna ocupa igual espacio */
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px; /* Espacio entre label e input */
+    font-weight: bold;
+    font-size: 14px; /* Tamaño de fuente del label */
+}
+
+.form-control {
+    width: 80%; /* Ocupa todo el ancho de la columna */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px; /* Tamaño de fuente del campo */
+    margin-bottom: 15px; /* Espacio adicional entre campos */
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary, .btn-secondary {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.footer {
+    background-color: #ff8c00;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}

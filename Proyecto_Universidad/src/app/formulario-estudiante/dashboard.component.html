@@ -1,0 +1,28 @@
+<!-- app.component.html -->
+<div class="header-logos">
+  <img src="logo.png" alt="Logo" class="logo-left" />
+  <img src="logo-right.png" alt="Logo Derecho" class="logo-right" />
+</div>
+
+<div class="dashboard-background">
+  <div class="menu-container" [ngClass]="{ 'open': menuOpen }">
+    <div class="menu-icon-container" (click)="toggleMenu()">
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+      <div class="menu-icon"></div>
+    </div>
+    <div class="menu-options" [ngClass]="{ 'show': menuOpen }">
+      <button class="menu-option" routerLink="/asignacion">Asignación</button>
+      <button class="menu-option" routerLink="/carrera">Carrera</button>
+      <button class="menu-option" routerLink="/catedraticos">Catedráticos</button>
+      <button class="menu-option" routerLink="/cursos">Cursos</button>
+      <button class="menu-option" routerLink="/estudiante">Estudiante</button>
+      <button class="menu-option" routerLink="/facultad">Facultad</button>
+      <button class="menu-option" routerLink="/pensum">Pensum</button>
+      <button class="menu-option" routerLink="/dashboard">Volver al Inicio</button>
+      <button class="menu-option" (click)="logout()">Cerrar Sesión</button>
+    </div>
+  </div>
+  
+  <router-outlet></router-outlet> <!-- Aquí se renderizan los componentes de las rutas -->
+</div>

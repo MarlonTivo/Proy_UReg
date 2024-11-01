@@ -1,0 +1,11 @@
+<div class="facultad-container">
+    <h2>Formulario de Facultad</h2>
+    <form [formGroup]="facultadForm" (ngSubmit)="guardarFacultad()">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" formControlName="nombre">
+      <label for="ubicacion">Ubicación</label>
+      <input type="text" id="ubicacion" formControlName="ubicacion">
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+  

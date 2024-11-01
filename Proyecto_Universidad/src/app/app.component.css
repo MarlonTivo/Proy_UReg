@@ -1,0 +1,29 @@
+body.dashboard {
+    background-image: url('/background.png'); /* Imagen de fondo específica del dashboard */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent; /* Asegúrate de que el color de fondo sea transparente */
+  }
+  
+  body:not(.dashboard) {
+    background-color: #0056b3; /* Fondo azul para otras secciones */
+  }
+  
+  .footer {
+    height: 50px; /* Incrementamos la altura del pie de página */
+    padding: 10px; /* Incrementamos el padding para dar más espacio a los textos */
+    font-size: 10px;
+    background-color: #ff8c00;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0; /* Bajamos el pie de página para cubrir el espacio azul */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

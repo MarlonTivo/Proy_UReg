@@ -1,0 +1,54 @@
+<div>
+    <div class="header-logos">
+      <img src="/logo_10_anos.png" alt="University Logo" class="logo-left">
+      <img src="/logo.png" alt="University Logo" class="logo-right">
+    </div>
+    <div *ngIf="router.url !== '/login'" class="menu-container" [ngClass]="{ 'open': menuOpen }">
+      <div class="menu-icon-container" (click)="toggleMenu()">
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+      </div>
+      <div class="menu-options" [ngClass]="{ 'show': menuOpen }">
+        <button class="menu-option" routerLink="/asignacion">Asignación</button>
+        <button class="menu-option" routerLink="/carrera">Carrera</button>
+        <button class="menu-option" routerLink="/catedraticos">Catedráticos</button>
+        <button class="menu-option" routerLink="/cursos">Cursos</button>
+        <button class="menu-option" routerLink="/estudiante">Estudiante</button>
+        <button class="menu-option" routerLink="/facultad">Facultad</button>
+        <button class="menu-option" routerLink="/pensum">Pensum</button>
+        <button class="menu-option" routerLink="/dashboard">Volver al Inicio</button>
+        <button class="menu-option" (click)="logout()">Cerrar Sesión</button>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>Universidad Regional De Guatemala</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/URegionalStalucia" target="_blank">
+            <img src="/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/uregionalr2/profilecard/?igsh=aGE5am10aTd3NXFw" target="_blank">
+            <img src="/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.tiktok.com/@uregionalr2?_t=8qwMIqkgTX4&_r=1" target="_blank">
+            <img src="/tiktok.png" alt="TikTok">
+          </a>
+        </div>
+        <div class="contact-info">
+          <ul>
+            <li>
+              <a href="https://wa.me/50230370600" target="_blank">
+                <img src="/whatsapp.png" class="icon" alt="WhatsApp"> +502 3037-0600
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/50246732758" target="_blank">+502 4673-2758</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  

@@ -1,0 +1,11 @@
+<div class="pensum-container">
+    <h2>Formulario de Pensum</h2>
+    <form [formGroup]="pensumForm" (ngSubmit)="guardarPensum()">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" formControlName="nombre">
+      <label for="descripcion">Descripción</label>
+      <input type="text" id="descripcion" formControlName="descripcion">
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+  

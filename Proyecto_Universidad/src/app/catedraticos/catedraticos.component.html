@@ -1,0 +1,13 @@
+<div class="catedraticos-container">
+    <h2>Formulario de Catedráticos</h2>
+    <form [formGroup]="catedraticosForm" (ngSubmit)="guardarCatedratico()">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" formControlName="nombre">
+      <label for="apellido">Apellido</label>
+      <input type="text" id="apellido" formControlName="apellido">
+      <label for="email">Email</label>
+      <input type="email" id="email" formControlName="email">
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+  

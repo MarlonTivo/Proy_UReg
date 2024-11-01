@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Estudiante</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Estudiante</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn-submit">Guardar</button>
+            <button type="reset" class="btn-reset">Limpiar</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Universidad Regional de Guatemala</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/URegionalStalucia"><img src="{% static 'facebook.png' %}" alt="Facebook"></a>
+            <a href="https://www.instagram.com/uregionalr2/profilecard/?igsh=aGE5am10aTd3NXFw"><img src="{% static 'instagram.png' %}" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/@uregionalr2?_t=8qwMIqkgTX4&_r=1"><img src="{% static 'tiktok.png' %}" alt="TikTok"></a>
+        </div>
+    </div>
+</body>
+</html>

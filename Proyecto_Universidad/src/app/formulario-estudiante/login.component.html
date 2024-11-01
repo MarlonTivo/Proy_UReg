@@ -1,0 +1,17 @@
+<div class="login-wrapper">
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="login-container">
+      <h2>Iniciar Sesión</h2>
+      <div class="input-group">
+        <span class="icon">👤</span> <!-- Icono de usuario -->
+        <input type="text" placeholder="Usuario" formControlName="username">
+      </div>
+      <div class="input-group">
+        <span class="icon">🔒</span> <!-- Icono de candado -->
+        <input type="password" placeholder="Contraseña" formControlName="password">
+      </div>
+      <button type="submit" class="btn-login">Iniciar Sesión</button>
+      <button type="button" class="btn-register" routerLink="/registro">Registro de Usuario</button>
+    </div>
+  </form>
+</div>
